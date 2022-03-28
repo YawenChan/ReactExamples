@@ -1,4 +1,10 @@
-.App {
+.indexWidth {
+  max-width: 100%;
+  background: beige;
+  color: burlywood;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +41,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
