@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import { BrowserRouter, Routes } from 'react-router-dom'; 
+import {HashRouter,Route} from "react-router-dom"
+// 頁面匯入
+import Index from './pages/Index.js';
+import Japan from './pages/Japan.js';
+import Westen from './pages/Westen.js';
+import Children from './pages/Children.js';
+// 元件匯入
+import Header from './components/Header';
+import Footer from './components/footer';
+import Menu from './components/Menu';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+          <Header/>
+          <Menu/>
+            <div className="bodyWidth">
+                  <HashRouter>
+                    <Routes>
+                      <Route path="/" element={<Index/>}/> 
+                      <Route path="/children" element={<Children/>}/>
+                      <Route path="/japan" element={<Japan/>}/>
+                      <Route path="/westen" element={<Westen/>}/>
+                    </Routes>
+                  </HashRouter>
+            </div>
+          <Footer/>
+     
+    </>
   );
 }
 

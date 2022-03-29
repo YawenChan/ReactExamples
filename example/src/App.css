@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+/* 切換頁面中間區塊定義高度 */
+.bodyWidth {
+  position: relative;
+  width: 1200px;
+  min-height: calc(100vh - 10vh - 120px);
+  margin: 0 auto;
+  background-color: rgb(247, 239, 234);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header樣式 */
+
+.header {
+  background: rgb(94, 68, 19);
+  border: 1px solid navy;
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  height: 10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* menu樣式 */
+
+.menu {
+  width: 200px;
+}
+ul {
+  float: left;
+  display: inline;
+  width: 100%;
+}
+li {
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(218, 180, 125);
+  height: 30px;
+  width: 200px;
+  list-style-type: none;
+}
+li:hover {
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(207, 149, 68);
+  height: 30px;
+  width: 200px;
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  width: 500px;
+  height: 500px;
+  background: none;
+  color: black;
+}
+
+/* Book樣式 */
+
+.bookWrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.book {
+  margin: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 表格樣式 */
+
+.table {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background: rgb(238, 172, 87);
+  border: 1px solid rgb(133, 112, 112);
+  /* border-bottom: 1px solid rgb(133, 112, 112); */
+}
+
+.cell {
+  text-align: center;
+  line-height: 50px;
+  width: 33%;
+  height: 50px;
+  border-bottom: none;
+}
+.tableContent {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background: rgb(250, 230, 202);
+  border: 1px solid rgb(133, 112, 112);
+  border-top: none;
+  border-bottom: none;
+  /* background: rgb(241, 177, 207); */
+}
+.cellContents {
+  width: 150px;
+  text-align: center;
+  line-height: 50px;
+  width: 33.33%;
+  height: 50px;
+
+  border-bottom: 1px solid rgb(133, 112, 112);
 }
