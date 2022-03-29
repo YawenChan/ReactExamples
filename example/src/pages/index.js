@@ -1,12 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-
-function index(props) {
+// import PropTypes from 'prop-types'
+import "../App.css"
+function Index(props) {
   return (
-    <div>index</div>
+    <div className='main'>Hi , this is index.</div>
   )
 }
 
-index.propTypes = {}
+Index.propTypes = {}
 
-export default index
+export default Index
