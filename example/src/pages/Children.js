@@ -32,7 +32,17 @@ const books= [
         book:"1Q84 Book3 ",
         author:"村上春樹",
         place:"中壢分館"
-    }
+    },
+    {
+        book:"海邊的卡夫卡(上)",
+        author:"村上春樹",
+        place:"平鎮分館"
+    },
+    {
+        book:"海邊的卡夫卡(下)",
+        author:"村上春樹",
+        place:"平鎮分館"
+    },
 ]
 
 
