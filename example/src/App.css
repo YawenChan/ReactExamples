@@ -5,6 +5,8 @@
   min-height: calc(100vh - 10vh - 120px);
   margin: 0 auto;
   background-color: rgb(247, 239, 234);
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 /* header樣式 */
@@ -20,26 +22,33 @@
 /* menu樣式 */
 
 .menu {
-  width: 200px;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
 }
 ul {
-  float: left;
+  float: bottom;
   display: inline;
-  width: 100%;
+  /* min-width: 800px; */
+  padding-top: 0px;
+  margin-top: 0px;
 }
 li {
   border: 1px solid rgb(255, 255, 255);
   background: rgb(218, 180, 125);
-  height: 30px;
-  width: 200px;
+  height: 40px;
+  width: 25%;
   list-style-type: none;
+  font-size: 30px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
 }
 li:hover {
-  border: 1px solid rgb(255, 255, 255);
   background: rgb(207, 149, 68);
-  height: 30px;
-  width: 200px;
-  list-style-type: none;
 }
 
 .main {
@@ -50,6 +59,10 @@ li:hover {
 }
 
 /* Book樣式 */
+.divWrapper {
+  padding: 0px;
+  margin: 0px;
+}
 
 .bookWrapper {
   display: flex;
@@ -63,14 +76,24 @@ li:hover {
 
 /* 表格樣式 */
 
+.tableFull {
+  /* width: 90%; */
+  /* border: 1px solid rgb(133, 112, 112); */
+}
+.tableOut {
+  position: relative;
+}
 .table {
   width: 90%;
+
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
   background: rgb(238, 172, 87);
-  border: 1px solid rgb(133, 112, 112);
-  /* border-bottom: 1px solid rgb(133, 112, 112); */
+}
+/* 有scrollbar時家的樣式 */
+.table-shadow {
+  box-shadow: 2px 0px 0px #eeac57, -2px 0px 0px #eeac57;
 }
 
 .cell {
@@ -82,11 +105,12 @@ li:hover {
 }
 .tableContent {
   width: 90%;
+  max-height: 200px;
+  overflow: auto;
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
   background: rgb(250, 230, 202);
-  border: 1px solid rgb(133, 112, 112);
   border-top: none;
   border-bottom: none;
   /* background: rgb(241, 177, 207); */
@@ -97,6 +121,5 @@ li:hover {
   line-height: 50px;
   width: 33.33%;
   height: 50px;
-
-  border-bottom: 1px solid rgb(133, 112, 112);
+  border-bottom: 1px solid rgba(133, 112, 112, 0.6);
 }
