@@ -5,22 +5,23 @@ import { Link } from 'react-router-dom'
 
 function Menu(props) {
   return (
-    <div className='menu'>
-        <ul>
-            <li><a href="/#/">首頁</a></li>
+    <>
+        <ul className='menu'>
             <li>
-            {/* <Link to="../children"></Link> */}
-                <a href="/#/Children">童書</a>
+                <Link to="/Index">首頁</Link>
             </li>
             <li>
-                <a href="/#/japan">日本文學</a>
+                <Link to="/Children">繪本</Link>
             </li>
             <li>
-                <a href="">西方文學</a>
-                
+                <Link to="/Japan">文學</Link>
             </li>
+            <li>
+                <Link to="/Westen">翻譯文學</Link>            
+            </li>
+  
         </ul>
-    </div>
+    </>
   )
 }
 

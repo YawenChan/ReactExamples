@@ -1,7 +1,6 @@
 import './App.css';
 import React from "react";
-import { BrowserRouter, Routes } from 'react-router-dom'; 
-import {HashRouter,Route} from "react-router-dom"
+import { Router,BrowserRouter,HashRouter, Routes,Route,Link } from 'react-router-dom'; 
 // 頁面匯入
 import Index from './pages/Index.js';
 import Japan from './pages/Japan.js';
@@ -14,21 +13,24 @@ import Menu from './components/Menu';
 
 
 function App() {
+  // 說明
+  // 所有要使用到連結的頁面都要包含在HashRouter裡面才會吃到連結，
+  // 不然使用Link標籤時會出現Blank page。
+  // Footer和Header建議寫在div外才能維持在上下固定。
   return (
     <>
-          <Header/>
-          <Menu/>
-            <div className="bodyWidth">
-                  <HashRouter>
-                    <Routes>
-                      <Route path="/" element={<Index/>}/> 
-                      <Route path="/children" element={<Children/>}/>
-                      <Route path="/japan" element={<Japan/>}/>
-                      <Route path="/westen" element={<Westen/>}/>
-                    </Routes>
-                  </HashRouter>
-            </div>
-          <Footer/>
+          <HashRouter>
+            <Header/> 
+              <div className="bodyWidth">
+              <Routes>
+                <Route path="/" element={<Index/>}/> 
+                <Route path="/children" element={<Children/>}/>
+                <Route path="/japan" element={<Japan/>}/>
+                <Route path="/westen" element={<Westen/>}/>
+              </Routes>
+                </div>
+              <Footer/>
+          </HashRouter>
      
     </>
   );

@@ -5,44 +5,24 @@ import Book from '../components/Book'
 import TableCell from '../components/TableCell'
 // 引入樣式
 import "../App.css"
-
+import Menu from './../components/Menu';
 // 前端操作，套用假資料Json檔案
 // 此功能為模擬後端傳入前端的陣列資料
 const books= [
     {
-        book:"聽風的歌",
+        book:"羊男的聖誕節",
         author:"村上春樹",
         place:"桃園總管"
     },{
-        book:"1973年的彈珠玩具",
-        author:"村上春樹",
+        book: "毛茸茸　ふわふわ",
+        author:"村上春樹,西安水丸",
         place:"中壢分館"
 
     },{
-        book:"1Q84 Book1 ",
+        book: "襲擊麵包屋 パン屋を襲う",
         author:"村上春樹",
         place:"中壢分館"
-    },
-    {
-        book:"1Q84 Book2 ",
-        author:"村上春樹",
-        place:"中壢分館"
-    },
-    {
-        book:"1Q84 Book3 ",
-        author:"村上春樹",
-        place:"中壢分館"
-    },
-    {
-        book:"海邊的卡夫卡(上)",
-        author:"村上春樹",
-        place:"平鎮分館"
-    },
-    {
-        book:"海邊的卡夫卡(下)",
-        author:"村上春樹",
-        place:"平鎮分館"
-    },
+    }
 ]
 
 
@@ -50,8 +30,10 @@ const books= [
 
 function Children(props) {
   return (
+    <>
     <div>
-        <h2>Children</h2>
+
+        <h2 className='divWrapper'>Children</h2>
         <div className="bookWrapper">
             <Book/>
             <Book/>
@@ -77,12 +59,11 @@ function Children(props) {
             })
             
 
-        }
-            
-            
+        } 
         </div>
-
     </div>
+
+    </>
 
 
   )
