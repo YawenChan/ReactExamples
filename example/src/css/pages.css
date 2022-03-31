@@ -1,45 +1,13 @@
+@charset "UTF-8";
 /* 切換頁面中間區塊定義高度 */
 .bodyWidth {
   position: relative;
   width: 1200px;
   min-height: calc(100vh - 10vh - 120px);
   margin: 0 auto;
-  background-color: rgb(247, 239, 234);
+  background-color: #f7efea;
   padding-bottom: 50px;
   padding-top: 50px;
-}
-
-
-/* menu樣式 */
-
-.menu {
-  display: flex;
-  padding: 0px;
-  margin: 0px;
-}
-ul {
-  float: bottom;
-  display: inline;
-  /* min-width: 800px; */
-  padding-top: 0px;
-  margin-top: 0px;
-}
-li {
-  border: 1px solid rgb(255, 255, 255);
-  background: rgb(218, 180, 125);
-  height: 40px;
-  width: 25%;
-  list-style-type: none;
-  font-size: 30px;
-  text-align: center;
-}
-a {
-  text-decoration: none;
-  color: black;
-  display: block;
-}
-li:hover {
-  background: rgb(207, 149, 68);
 }
 
 .main {
@@ -56,35 +24,47 @@ li:hover {
 }
 
 .bookWrapper {
-  display: flex;
   width: 90%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
-.book {
+.bookWrapper .book {
   margin: 15px;
+  height: 400px;
+}
+
+.bookWrapper .book img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 348px;
 }
 
 /* 表格樣式 */
-
 .tableFull {
   /* width: 90%; */
   /* border: 1px solid rgb(133, 112, 112); */
 }
+
 .tableOut {
   position: relative;
 }
+
 .table {
   width: 90%;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  flex-wrap: wrap;
-  background: rgb(238, 172, 87);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #eeac57;
 }
+
 /* 有scrollbar時+的樣式 */
 .table-shadow {
-  box-shadow: 2px 0px 0px #eeac57, -2px 0px 0px #eeac57;
+  -webkit-box-shadow: 2px 0px 0px #eeac57, -2px 0px 0px #eeac57;
+          box-shadow: 2px 0px 0px #eeac57, -2px 0px 0px #eeac57;
 }
 
 .cell {
@@ -94,19 +74,24 @@ li:hover {
   height: 50px;
   border-bottom: none;
 }
+
 .tableContent {
+  margin-top: 30px;
   width: 90%;
   max-height: 200px;
   overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  flex-wrap: wrap;
-  background: rgb(250, 230, 202);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #fae6ca;
   border-top: none;
   border-bottom: none;
-  /* background: rgb(241, 177, 207); */
 }
-.cellContents {
+
+.tableContent .cellContents {
   width: 150px;
   text-align: center;
   line-height: 50px;

@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import "../App.css"
-
+// 使用鉤子
 function Book(props) {
+  const{book,pic}=props;
+  
   return (
-    <div>
+    <>
         <div className='book'>
-            <div >
-                <img src="https://picsum.photos/200/300" alt="" />
-            </div>
-            <div>假圖</div>
+          <img src={pic} alt="" />
+          <div>{book}</div>
         </div>
-    </div>
+    </>
   )
 }
 

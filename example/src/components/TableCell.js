@@ -4,7 +4,7 @@ import "../App.css"
 
 function TableCell(props) {
     const{book,author,place}=props;
-    console.log(book);
+    // console.log(book);
   return (
     <>
         <div className='cellContents'>{book}</div>
