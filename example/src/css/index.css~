@@ -1,9 +1,0 @@
-.bodyWidth {
-  position: relative;
-  width: 1400px;
-  min-height: calc(100vh - 120px);
-  margin: 0 auto;
-  background-color: bisque;
-}
-
-/*# sourceMappingURL=index.css~.map */

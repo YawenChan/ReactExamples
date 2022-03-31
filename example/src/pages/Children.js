@@ -5,6 +5,7 @@ import Book from '../components/Book'
 import TableCell from '../components/TableCell'
 // 引入樣式
 import "../App.css"
+import "../css/pages.css"
 import Menu from './../components/Menu';
 // 前端操作，套用假資料Json檔案
 // 此功能為模擬後端傳入前端的陣列資料
@@ -12,16 +13,19 @@ const books= [
     {
         book:"羊男的聖誕節",
         author:"村上春樹",
-        place:"桃園總管"
+        place:"桃園總管",
+        pic:"img/sheep.jpg",
     },{
         book: "毛茸茸　ふわふわ",
         author:"村上春樹,西安水丸",
-        place:"中壢分館"
+        place:"中壢分館",
+        pic:"img/fuwafuwa.jpg",
 
     },{
         book: "襲擊麵包屋 パン屋を襲う",
         author:"村上春樹",
-        place:"中壢分館"
+        place:"中壢分館",
+        pic:"img/bread.jpg",
     }
 ]
 
@@ -35,10 +39,16 @@ function Children(props) {
 
         <h2 className='divWrapper'>Children</h2>
         <div className="bookWrapper">
-            <Book/>
-            <Book/>
-            <Book/>
-            <Book/>
+        {
+            books.map((v,i)=>{
+                return(
+            <Book
+                pic={v.pic}
+                book={v.book}
+            />
+                )
+            })
+        }
         </div>
         <div className='table'>
             <div className='cell'>書名</div>
@@ -57,8 +67,6 @@ function Children(props) {
             />
                 )
             })
-            
-
         } 
         </div>
     </div>

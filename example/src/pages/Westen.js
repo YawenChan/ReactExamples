@@ -6,19 +6,17 @@ import TableCell from '../components/TableCell'
 
 const books= [
   {
-      book:"1Q84(1)",
+      book:"關於跑步，我想說的是...",
       author:"村上春樹",
-      place:"桃園總管"
+      place:"桃園總管",
+      pic:"img/run.jpg",
   },{
-      book: "1Q84(2)",
+      book: "遠方的鼓聲",
       author:"村上春樹",
-      place:"中壢分館"
+      place:"中壢分館",
+      pic:"img/drum.jpg",
 
-  },{
-      book: "1Q84(3)",
-      author:"村上春樹",
-      place:"中壢分館"
-  }
+  },
 ]
 
 function Westen(props) {
@@ -28,14 +26,23 @@ function Westen(props) {
 
 <h2 className='divWrapper'>Children</h2>
 <div className="bookWrapper">
-    <Book/>
-    <Book/>
-    <Book/>
-    <Book/>
+{
+    books.map((v,i)=>{
+        return(
+    <Book
+        book={v.book}
+        author={v.author}
+        pic={v.pic}
+    />
+        )
+
+    })
+}
+ 
 </div>
 <div className='table'>
     <div className='cell'>書名</div>
-    <div className='cell'>譯者</div>
+    <div className='cell'>作者</div>
     <div className='cell'>館藏地</div>    
 </div>
 <div className='tableContent'>

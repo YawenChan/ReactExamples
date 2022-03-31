@@ -1,6 +1,6 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-import "./../App.css"
+import "./../css/header.css"
 import { Link } from 'react-router-dom'
 
 function Menu(props) {
@@ -14,10 +14,10 @@ function Menu(props) {
                 <Link to="/Children">繪本</Link>
             </li>
             <li>
-                <Link to="/Japan">文學</Link>
+                <Link to="/Japan">小說</Link>
             </li>
             <li>
-                <Link to="/Westen">翻譯文學</Link>            
+                <Link to="/Westen">散文</Link>            
             </li>
   
         </ul>
