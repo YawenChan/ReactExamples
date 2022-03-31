@@ -11,7 +11,6 @@ import Children from './pages/Children.js';
 // 元件匯入
 import Header from './components/Header';
 import Footer from './components/footer';
-import Menu from './components/Menu';
 
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
   // Footer和Header建議寫在div外才能維持在上下固定。
   return (
     <>
-          <HashRouter>
+          <HashRouter key="2">
             <Header/> 
               <div className="bodyWidth">
               <Routes>
