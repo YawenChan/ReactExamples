@@ -8,7 +8,7 @@ function Menu(props) {
     <>
         <ul className='menu'>
             <li>
-                <Link to="/Index">首頁</Link>
+                <Link to="/">首頁</Link>
             </li>
             <li>
                 <Link to="/Children">繪本</Link>

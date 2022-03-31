@@ -27,17 +27,24 @@
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bookWrapper .book {
   margin: 15px;
-  height: 400px;
+  height: 220px;
+  width: 20%;
 }
 
 .bookWrapper .book img {
   -o-object-fit: fill;
      object-fit: fill;
-  height: 348px;
+  height: 200px;
 }
 
 /* 表格樣式 */
