@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useState } from 'react';
 // 引入元件
 import Book from '../components/Book'
 import TableCell from '../components/TableCell'
 // 引入樣式
 import "../App.css"
 import "../css/pages.css"
-import Menu from './../components/Menu';
+
 // 前端操作，套用假資料Json檔案
 // 此功能為模擬後端傳入前端的陣列資料
 const books= [
@@ -37,13 +36,11 @@ const books= [
 
 
 function Children(props) {
-      const[num,setNum]=useState(0);
+
   return (
     <>
     <div>
         <h2 className='divWrapper' key="1">Children</h2>
-    <p>人數統計{num}</p>
-    <button onClick={()=>{setNum(num+1)}}>到此一遊</button>
 
         <div className="bookWrapper" key="2">
         {

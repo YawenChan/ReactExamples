@@ -25,12 +25,16 @@
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
   .book {
     margin: 15px;
-    height: 400px;
+    height: 220px;
+    width: 20%;
     img {
       object-fit: fill;
-      height: 348px;
+      height: 200px;
     }
   }
 }
