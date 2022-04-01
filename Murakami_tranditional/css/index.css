@@ -1,0 +1,110 @@
+* {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #f7efea;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  background: #5e4413;
+  border: 1px solid navy;
+  color: white;
+  height: 10vh;
+}
+
+header h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul li {
+  border: 1px solid white;
+  background: #dab47d;
+  height: 40px;
+  width: 25%;
+  list-style-type: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+ul li:hover {
+  background: #cf9544;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.innerWrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bodyWidth {
+  position: relative;
+  width: 1400px;
+  min-height: calc(100vh - 10vh - 120px);
+  margin: 0 auto;
+  background-color: #f7efea;
+  width: 100%;
+}
+
+.bodyWidth .indexWrapper {
+  margin: 0 auto;
+}
+
+.bodyWidth .indexWrapper h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.bodyWidth .indexWrapper div p {
+  font-size: 20px;
+}
+
+.bodyWidth .indexWrapper div p span {
+  font-size: 35px;
+  color: #3e46b4;
+}
+
+.bodyWidth .indexWrapper button {
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+
+.bodyWidth .avatar {
+  width: 300px;
+}
+
+.bodyWidth .textBlock {
+  font-size: 20px;
+}
+
+footer {
+  overflow: hidden;
+  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #ccc;
+  height: 120px;
+  margin-top: 25px;
+}

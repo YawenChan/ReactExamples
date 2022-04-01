@@ -1,0 +1,44 @@
+.indexWrapper {
+  margin: 0 auto;
+}
+
+.indexWrapper p {
+  font-size: 20px;
+}
+
+.indexWrapper p span {
+  font-size: 35px;
+  color: #3e46b4;
+}
+
+.indexWrapper button {
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+
+.indexWrapper .avatar {
+  width: 300px;
+}
+
+.indexWrapperIndex {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.indexWrapperIndex p {
+  font-size: 20px;
+}
+
+.indexWrapperIndex p span {
+  font-size: 35px;
+  color: #3e46b4;
+}
+
+.indexWrapperIndex button {
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+
+.indexWrapperIndex .avatar {
+  width: 300px;
+}

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* header樣式 */
+.header {
+  background: #5e4413;
+  border: 1px solid navy;
+  color: white;
+  font-size: larger;
+  height: 10vh;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* menu樣式 */
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  float: bottom;
+  display: inline;
+  /* min-width: 800px; */
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+li {
+  border: 1px solid white;
+  background: #dab47d;
+  height: 40px;
+  width: 25%;
+  list-style-type: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+li:hover {
+  background: #cf9544;
+}

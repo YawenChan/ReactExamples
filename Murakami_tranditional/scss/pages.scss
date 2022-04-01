@@ -1,0 +1,62 @@
+// 圖片區塊樣式
+.bookWrapper {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  .book {
+    margin: 15px;
+    height: 220px;
+    width: 20%;
+    img {
+      object-fit: fill;
+      height: 200px;
+    }
+  }
+}
+
+// table區塊樣式
+.table {
+  width: 90%;
+
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background: rgb(238, 172, 87);
+}
+/* 有scrollbar時+的樣式 */
+.table-shadow {
+  box-shadow: 2px 0px 0px #eeac57, -2px 0px 0px #eeac57;
+}
+
+.cell {
+  text-align: center;
+  line-height: 50px;
+  width: 33%;
+  height: 50px;
+  border-bottom: none;
+}
+.tableContent {
+  margin-top: 30px;
+  width: 90%;
+  max-height: 200px;
+  overflow: auto;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background: rgb(250, 230, 202);
+  border-top: none;
+  border-bottom: none;
+
+  .cellContents {
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    width: 33.33%;
+    height: 50px;
+    border-bottom: 1px solid rgba(133, 112, 112, 0.6);
+  }
+}
