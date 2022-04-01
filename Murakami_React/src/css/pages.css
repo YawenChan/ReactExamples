@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* 切換頁面中間區塊定義高度 */
+.bodyWidth {
+  position: relative;
+  width: 1200px;
+  min-height: calc(100vh - 10vh - 120px);
+  margin: 0 auto;
+  background-color: #f7efea;
+  width: 100%;
+}
+
+.main {
+  width: 500px;
+  height: 500px;
+  background: none;
+  color: black;
+}
+
+/* Book樣式 */
+.divWrapper {
+  padding: 0px;
+  margin: 0px;
+}
+
+.bookWrapper {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bookWrapper .book {
+  margin: 15px;
+  height: 220px;
+  width: 20%;
+}
+
+.bookWrapper .book img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 200px;
+}
+
+/* 表格樣式 */
+.tableFull {
+  /* width: 90%; */
+  /* border: 1px solid rgb(133, 112, 112); */
+}
+
+.table {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #eeac57;
+}
+
+/* 有scrollbar時+的樣式 */
+.table-shadow {
+  -webkit-box-shadow: 2px 0px 0px #eeac57, -2px 0px 0px #eeac57;
+          box-shadow: 2px 0px 0px #eeac57, -2px 0px 0px #eeac57;
+}
+
+.cell {
+  text-align: center;
+  line-height: 50px;
+  width: 33%;
+  height: 50px;
+  border-bottom: none;
+}
+
+.tableContent {
+  margin-top: 30px;
+  width: 90%;
+  max-height: 200px;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #fae6ca;
+  border-top: none;
+  border-bottom: none;
+}
+
+.tableContent .cellContents {
+  width: 150px;
+  text-align: center;
+  line-height: 50px;
+  width: 33.33%;
+  height: 50px;
+  border-bottom: 1px solid rgba(133, 112, 112, 0.6);
+}

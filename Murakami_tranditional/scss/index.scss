@@ -1,0 +1,100 @@
+//menu
+* {
+  font-size: 100%;
+}
+h1 {
+  font-size: 1.5rem;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #f7efea;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+header {
+  background: #5e4413;
+  border: 1px solid navy;
+  color: white;
+  height: 10vh;
+  h1 {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+ul {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  li {
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(218, 180, 125);
+    height: 40px;
+    width: 25%;
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+    &:hover {
+      background: rgb(207, 149, 68);
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      display: block;
+    }
+  }
+}
+// 主要區塊內容
+.innerWrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.bodyWidth {
+  position: relative;
+  width: 1400px;
+  min-height: calc(100vh - 10vh - 120px);
+  margin: 0 auto;
+  background-color: #f7efea;
+  width: 100%;
+  .indexWrapper {
+    margin: 0 auto;
+    h2 {
+      padding: 0px;
+      margin: 0px;
+    }
+    div {
+      p {
+        font-size: 20px;
+        span {
+          font-size: 35px;
+          color: #3e46b4;
+        }
+      }
+    }
+    button {
+      margin-bottom: 20px;
+      font-size: 38px;
+    }
+  }
+  .avatar {
+    width: 300px;
+  }
+
+  .textBlock {
+    font-size: 20px;
+  }
+}
+
+// footer
+footer {
+  overflow: hidden;
+  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #ccc;
+  height: 120px;
+  margin-top: 25px;
+}

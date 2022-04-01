@@ -1,0 +1,39 @@
+// 首頁樣式
+
+.indexWrapper {
+  margin: 0 auto;
+
+  p {
+    font-size: 20px;
+    span {
+      font-size: 35px;
+      color: rgb(62, 70, 180);
+    }
+  }
+  button {
+    margin-bottom: 20px;
+    font-size: 38px;
+  }
+  .avatar {
+    width: 300px;
+  }
+}
+
+.indexWrapperIndex {
+  margin: 0 auto;
+  width: 90%;
+  p {
+    font-size: 20px;
+    span {
+      font-size: 35px;
+      color: rgb(62, 70, 180);
+    }
+  }
+  button {
+    margin-bottom: 20px;
+    font-size: 38px;
+  }
+  .avatar {
+    width: 300px;
+  }
+}
